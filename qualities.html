@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mirzawr | Personal Qualities</title>
+  <meta name="description" content="Personal qualities and strengths of Muhammad Dhiya Mirza (Mirzawr) - Detail-oriented, creative thinker, dedicated learner, and collaborative partner." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Mirzawr</a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="personal.html">Personal</a>
+        <a href="academics.html">Academics</a>
+        <a href="work.html">Work</a>
+        <a href="qualities.html" class="active">Qualities</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container section-header">
+        <p class="section-label">Personal Qualities</p>
+        <h2>My Strengths</h2>
+      </div>
+      <div class="container skills-container">
+        <!-- Core Skill -->
+        <div class="core-skill">
+          <div class="skill-card core" onclick="showSkillDetails(this)" data-skill="core">
+            <div class="skill-icon">★</div>
+            <div class="skill-name">Content Creator</div>
+            <div class="skill-desc">Foundation</div>
+          </div>
+        </div>
+
+        <!-- Main Skills Grid -->
+        <div class="skills-grid">
+          <div class="skill-card main" onclick="showSkillDetails(this)" data-skill="creative">
+            <div class="skill-icon">🎨</div>
+            <div class="skill-name">Creative Thinker</div>
+            <div class="skill-desc">Innovation & Design</div>
+            <div class="sub-skills">
+              <span class="sub-skill" onclick="event.stopPropagation(); showSkillDetails(this)" data-skill="innovation">💡 Innovation</span>
+              <span class="sub-skill" onclick="event.stopPropagation(); showSkillDetails(this)" data-skill="storytelling">📖 Storytelling</span>
+            </div>
+          </div>
+
+          <div class="skill-card main" onclick="showSkillDetails(this)" data-skill="learning">
+            <div class="skill-icon">📚</div>
+            <div class="skill-name">Dedicated Learner</div>
+            <div class="skill-desc">Growth & Adaptability</div>
+            <div class="sub-skills">
+              <span class="sub-skill" onclick="event.stopPropagation(); showSkillDetails(this)" data-skill="growth">🌱 Growth Mindset</span>
+              <span class="sub-skill" onclick="event.stopPropagation(); showSkillDetails(this)" data-skill="adaptability">🔄 Adaptability</span>
+            </div>
+          </div>
+
+          <div class="skill-card main" onclick="showSkillDetails(this)" data-skill="detail">
+            <div class="skill-icon">🎯</div>
+            <div class="skill-name">Detail-Oriented</div>
+            <div class="skill-desc">Precision & Quality</div>
+            <div class="sub-skills">
+              <span class="sub-skill" onclick="event.stopPropagation(); showSkillDetails(this)" data-skill="precision">🔍 Precision</span>
+              <span class="sub-skill" onclick="event.stopPropagation(); showSkillDetails(this)" data-skill="quality">✨ Quality Focus</span>
+            </div>
+          </div>
+
+          <div class="skill-card main" onclick="showSkillDetails(this)" data-skill="collab">
+            <div class="skill-icon">🤝</div>
+            <div class="skill-name">Collaborative</div>
+            <div class="skill-desc">Teamwork & Communication</div>
+            <div class="sub-skills">
+              <span class="sub-skill" onclick="event.stopPropagation(); showSkillDetails(this)" data-skill="teamwork">👥 Teamwork</span>
+              <span class="sub-skill" onclick="event.stopPropagation(); showSkillDetails(this)" data-skill="communication">💬 Communication</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Skills Section -->
+        <div class="technical-skills-section">
+          <h3 class="tech-skills-title">Technical Skills</h3>
+          <div class="tech-skills-grid">
+            <div class="tech-skill" onclick="showSkillDetails(this)" data-skill="premiere">
+              <div class="tech-icon">🎬</div>
+              <div class="tech-name">Premiere Pro</div>
+            </div>
+            <div class="tech-skill" onclick="showSkillDetails(this)" data-skill="davinci">
+              <div class="tech-icon">🎥</div>
+              <div class="tech-name">DaVinci Resolve</div>
+            </div>
+            <div class="tech-skill" onclick="showSkillDetails(this)" data-skill="blender">
+              <div class="tech-icon">🧊</div>
+              <div class="tech-name">Blender</div>
+            </div>
+            <div class="tech-skill" onclick="showSkillDetails(this)" data-skill="photoshop">
+              <div class="tech-icon">🖼️</div>
+              <div class="tech-name">Photoshop</div>
+            </div>
+            <div class="tech-skill" onclick="showSkillDetails(this)" data-skill="canva">
+              <div class="tech-icon">🎨</div>
+              <div class="tech-name">Canva</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Details Panel -->
+        <div class="skill-details-panel" id="skillDetails">
+          <div class="panel-header">
+            <h3 id="skillTitle">Skill Details</h3>
+            <button class="close-panel" onclick="closeSkillDetails()">×</button>
+          </div>
+          <div class="panel-content" id="skillContent">
+            <p>Click on a skill to view details</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Muhammad Dhiya Mirza.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

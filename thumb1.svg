@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640" width="360" height="640">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0%" stop-color="#FFB347"/>
+      <stop offset="100%" stop-color="#FF6F61"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" rx="24" fill="#2f2132"/>
+  <rect x="12" y="12" width="336" height="616" rx="18" fill="url(#g1)" opacity="0.08"/>
+  <circle cx="180" cy="200" r="80" fill="#1E1320" stroke="url(#g1)" stroke-width="8"/>
+  <path d="M120 420C120 360 160 340 180 340C200 340 240 360 240 420" stroke="#FFB347" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <text x="180" y="520" font-family="Courier New, monospace" font-size="28" fill="#f6e5c4" text-anchor="middle">Abrand — 1</text>
+</svg>
